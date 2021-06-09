@@ -19,6 +19,11 @@ class main_page extends CI_Controller {
 		$this->load->view('ask');
 	}
 	
+	public function ask_2()
+	{
+		$this->load->view('ask_2');
+	}
+	
 	public function login()
 	{
 		$this->load->view('login');
