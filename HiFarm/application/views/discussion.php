@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="utf-8">
+	
+	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Login HiFram</title>
+    <title>diskusi</title>
     <link rel="stylesheet" type = "text/css" href="<?php echo base_url() ?>assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type = "text/css" href="<?php echo base_url() ?>assets/css/login-full-page-bs4.css">
     <link rel="stylesheet" type = "text/css" href="<?php echo base_url() ?>assets/css/Navigation-Clean.css">
     <link rel="stylesheet" type = "text/css" href="<?php echo base_url() ?>assets/css/simple-footer.css">
-    
 </head>
-
 <body>
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background: var(--teal);">
+	<nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background: var(--teal);">
         <div class="container"><a class="navbar-brand" href="Home.html" style="color: var(--white);">HiFarm</a>
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="ask.html" style="color: var(--white);">Ask</a></li>
@@ -24,29 +22,9 @@
         </div>
     </nav>
 	
-    <div class="container-fluid main-panel">
-        <div class="row">
-            <div class="col d-flex justify-content-center align-items-center" style="padding: 90px;">
-                <div class="login-panel">
-                    <div class="login-user-avatar"></div>
-                    <div class="login-form">
-                        <form>
-                            <div class="form-group">
-                                <div class="input-group"><input class="form-control" type="text" id="login-username" name="username" required="" placeholder="Username"></div>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group"><input class="form-control" type="password" name="password" required="" placeholder="Password"></div>
-                            </div>
-                            <div class="form-group"><button class="btn btn-primary btn-block" type="button" style="color: rgb(255, 255, 255);background: var(--teal);">Login</button></div>
-                        </form>
-                    </div>
-                    <div class="login-response has-error"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<p>hello</p>
 	
-    <div class="footer-2" style="background: var(--teal);">
+	<div class="footer-2" style="background: var(--teal);">
         <div class="container">
             <div class="row">
                 <div class="col-8 col-sm-6 col-md-6">
@@ -58,11 +36,6 @@
             </div>
         </div>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/login-full-page-bs4.js"></script>
-    <script src="assets/js/login-full-page-bs4-1.js"></script>
-    <script src="assets/js/Image-slider-carousel-With-arrow-buttons.js"></script>
-</body>
 
+</body>
 </html>

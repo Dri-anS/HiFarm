@@ -29,4 +29,9 @@ class main_page extends CI_Controller {
 		$this->load->view('login');
 	}
 	
+	public function discussion()
+	{
+		$this->load->view('discussion');
+	}
+	
 }
