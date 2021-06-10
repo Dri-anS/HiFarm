@@ -33,5 +33,9 @@ class main_page extends CI_Controller {
 	{
 		$this->load->view('discussion');
 	}
+	public function sign_up()
+	{
+		$this->load->view('sign_up');
+	}
 	
 }
