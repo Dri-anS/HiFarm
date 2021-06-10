@@ -16,9 +16,9 @@
     <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background: var(--teal);">
         <div class="container"><a class="navbar-brand" href="Home.html" style="color: var(--white);">HiFarm</a>
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="ask.html" style="color: var(--white);">Ask</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" style="color: var(--white);">Discussion</a></li>
-                <li class="nav-item"><a class="nav-link" href="login.html" style="color: var(--white);">Log in</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?= base_url()."index.php/main_page/ask_2"; ?>" style="color: var(--white);">Ask</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?= base_url()."index.php/main_page/discussion"; ?>" style="color: var(--white);">Discussion</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?= base_url()."index.php/main_page/login"; ?>" style="color: var(--white);">Log in</a></li>
 				<li class="nav-item"><a class="nav-link" href="#" style="color: var(--white);">Sign Up</a></li>
             </ul><button class="navbar-toggler" data-toggle="collapse"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         </div>
@@ -58,11 +58,13 @@
             </div>
         </div>
     </div>
+	
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/login-full-page-bs4.js"></script>
     <script src="assets/js/login-full-page-bs4-1.js"></script>
     <script src="assets/js/Image-slider-carousel-With-arrow-buttons.js"></script>
+	
 </body>
 
 </html>
