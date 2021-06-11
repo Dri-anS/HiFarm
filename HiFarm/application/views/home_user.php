@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>HiFram</title>
+    <title>HiFram User</title>
     <link rel="stylesheet" type = "text/css" href="<?php echo base_url() ?>assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" type = "text/css" href="<?php echo base_url() ?>assets/fonts/font-awesome.min.css">
@@ -27,12 +27,13 @@
                 <li class="nav-item"><a class="nav-link" href="<?= base_url()."index.php/main_page/discussion"; ?>" style="color: var(--white);">Discussion</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?= base_url()."index.php/main_page/login"; ?>" style="color: var(--white);">Log in</a></li>
 				<li class="nav-item"><a class="nav-link" href="<?= base_url()."index.php/main_page/sign_up"; ?>" style="color: var(--white);">Sign Up</a></li>
+				<li class="nav-item"><a class="nav-link" href="<?= base_url()."index.php/main_page/logout"; ?>" style="color: var(--white);">Log Out</a></li>
             </ul><button class="navbar-toggler" data-toggle="collapse"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         </div>
     </nav>
     <div>
         <div class="container">
-            <h1 class="text-center" style="margin-top:52px;margin-left:34px;font-family:'Open Sans', sans-serif;font-size:22px;font-weight:800;line-height:32px;color:rgb(0,0,0);">Konten</h1>
+            <h1 class="text-center" style="margin-top:52px;margin-left:34px;font-family:'Open Sans', sans-serif;font-size:22px;font-weight:800;line-height:32px;color:rgb(0,0,0);">Halo <?php echo $this->session->userdata('username') ?></h1>
             <div class="cust_bloglistintro">
                 <p style="margin-left:34px;color:rgba(255,255,255,0.5);font-size:14px;"></p>
             </div>
