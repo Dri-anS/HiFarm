@@ -66,12 +66,6 @@ class main_page extends CI_Controller {
 	    
 // 	}
 	
-	//diskusi
-	public function discussion()
-	{
-		$this->load->view('discussion');
-	}
-	
 	//sign up
 	public function sign_up()
 	{
@@ -92,6 +86,35 @@ class main_page extends CI_Controller {
 	public function logout(){
 	    session_destroy();
 	    redirect(base_url());
+	}
+	
+	//tampil kan data diskusi
+	public function discussion(){
+	    $this->load->model('Hmodel');
+	    $dataAsk = $this->Hmodel->ambilData("ask");
+	    $data = array(
+	        "show" => $dataAsk
+	    );
+	    
+	    $this->load->view('discussion',$data);
+	}
+	
+	//tambah data ask
+	public function aksi_ask(){
+	    $this->load->model('Hmodel');
+	    $dataInputan = array(
+	        'username' => $this->session->userdata('username'),
+	        'pertanyaan' => $this->input->post('tanya'),
+	    );
+	    $this->Hmodel->masukan('ask',$dataInputan);
+	    
+	    //ke diskusi
+	    $dataAsk = $this->Hmodel->ambilData("ask");
+	    $data = array(
+	        "show" => $dataAsk
+	    );
+	    
+	    $this->load->view('discussion',$data);
 	}
 	
 }

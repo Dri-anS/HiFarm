@@ -9,6 +9,16 @@
     <link rel="stylesheet" type = "text/css" href="<?php echo base_url() ?>assets/css/login-full-page-bs4.css">
     <link rel="stylesheet" type = "text/css" href="<?php echo base_url() ?>assets/css/Navigation-Clean.css">
     <link rel="stylesheet" type = "text/css" href="<?php echo base_url() ?>assets/css/simple-footer.css">
+    <style>
+        .dis {
+    		  width: auto;
+    		  height: auto;
+    		  padding: 20px;
+    		  background-color: white;
+    		  box-shadow: 3px 5px 3px 5px grey;
+    		  margin : 20px;
+    		}
+  </style>
 </head>
 <body>
 	<nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background: var(--teal);">
@@ -23,6 +33,19 @@
     </nav>
 	
 	<p>hello</p>
+	<?php foreach($show as $dat){ ?>
+        
+	<div class="dis">
+	
+		<?php
+			echo "Nama :".$dat['username']."<br>";
+			echo "Pertayaan :".$dat['pertanyaan']."<br>"."<br>";
+		?>
+
+	</div>
+
+	<?php } ?>
+	
 	
 	<div class="footer-2" style="background: var(--teal);">
         <div class="container">

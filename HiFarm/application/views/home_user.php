@@ -28,6 +28,7 @@
                 <li class="nav-item"><a class="nav-link" href="<?= base_url()."index.php/main_page/login"; ?>" style="color: var(--white);">Log in</a></li>
 				<li class="nav-item"><a class="nav-link" href="<?= base_url()."index.php/main_page/sign_up"; ?>" style="color: var(--white);">Sign Up</a></li>
 				<li class="nav-item"><a class="nav-link" href="<?= base_url()."index.php/main_page/logout"; ?>" style="color: var(--white);">Log Out</a></li>
+				
             </ul><button class="navbar-toggler" data-toggle="collapse"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         </div>
     </nav>

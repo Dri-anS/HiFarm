@@ -29,9 +29,18 @@
         </div>
     </nav>
 	
+	<?php 
+// 	if ($pop == 1){
+// 	    echo '<script>alert("belum login")</script>';
+// 	}else{
+	    
+// 	}
+ 	?>
+	
 	<div class="box_ask">
+		<form action="<?php echo base_url()."index.php/main_page/aksi_ask"; ?>" method="POST">
 		<div class= "ask" ><input class="box" type="text" name="tanya" placeholder="Tanya tentang perkebunan ..."/></div>
-		<div><button type="button" style="color: rgb(255, 255, 255);background: var(--teal);">Ask!</button></div>
+		<div><button type="submit" style="color: rgb(255, 255, 255);background: var(--teal);">Ask!</button></div>
 	</div>
 	
     <div class="footer-2" style="background: var(--teal);">
