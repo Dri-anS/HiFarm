@@ -24,14 +24,23 @@
                 <li class="nav-item"><a class="nav-link" href="<?= base_url()."index.php/main_page/ask_2"; ?>" style="color: var(--white);">Ask</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?= base_url()."index.php/main_page/discussion"; ?>" style="color: var(--white);">Discussion</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?= base_url()."index.php/main_page/login"; ?>" style="color: var(--white);">Log in</a></li>
-				<li class="nav-item"><a class="nav-link" href="#" style="color: var(--white);">Sign Up</a></li>
+				<li class="nav-item"><a class="nav-link" href="<?= base_url()."index.php/main_page/sign_up"; ?>" style="color: var(--white);">Sign Up</a></li>
             </ul><button class="navbar-toggler" data-toggle="collapse"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         </div>
     </nav>
 	
+	<?php 
+// 	if ($pop == 1){
+// 	    echo '<script>alert("belum login")</script>';
+// 	}else{
+	    
+// 	}
+ 	?>
+	
 	<div class="box_ask">
+		<form action="<?php echo base_url()."index.php/main_page/aksi_ask"; ?>" method="POST">
 		<div class= "ask" ><input class="box" type="text" name="tanya" placeholder="Tanya tentang perkebunan ..."/></div>
-		<div><button type="button" style="color: rgb(255, 255, 255);background: var(--teal);">Ask!</button></div>
+		<div><button type="submit" style="color: rgb(255, 255, 255);background: var(--teal);">Ask!</button></div>
 	</div>
 	
     <div class="footer-2" style="background: var(--teal);">
