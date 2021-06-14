@@ -18,6 +18,14 @@
     		  box-shadow: 3px 5px 3px 5px grey;
     		  margin : 20px;
     		}
+    		
+    	.dis button{
+    	       float:right;
+    	       background-color: var(--teal);
+    	       color: white;
+    	       margin: 4px 2px;
+    	       border: none;    	       
+    	}
   </style>
 </head>
 <body>
@@ -32,16 +40,19 @@
         </div>
     </nav>
 	
-	<p>hello</p>
 	<?php foreach($show as $dat){ ?>
         
 	<div class="dis">
-	
+		
 		<?php
-			echo "Nama :".$dat['username']."<br>";
-			echo "Pertayaan :".$dat['pertanyaan']."<br>"."<br>";
+			echo $dat['username']."<hr>";
+			echo $dat['pertanyaan'];
 		?>
-
+		
+		<button href="#">reply</button>
+		<button href="#">edit</button>
+		<button href="#">hapus</button>
+		
 	</div>
 
 	<?php } ?>
