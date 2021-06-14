@@ -1,38 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	
-	<meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>diskusi</title>
+    <title>Edit ask</title>
     <link rel="stylesheet" type = "text/css" href="<?php echo base_url() ?>assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type = "text/css" href="<?php echo base_url() ?>assets/css/login-full-page-bs4.css">
-    <link rel="stylesheet" type = "text/css" href="<?php echo base_url() ?>assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" type = "text/css" href="<?php echo base_url() ?>assets/fonts/font-awesome.min.css"> 
+    <link rel="stylesheet" type = "text/css" href="<?php echo base_url() ?>assets/css/cards.css">
     <link rel="stylesheet" type = "text/css" href="<?php echo base_url() ?>assets/css/simple-footer.css">
-    <style>
-        .dis {
-    		  width: auto;
-    		  height: auto;
-    		  padding: 20px;
-    		  background-color: white;
-    		  box-shadow: 3px 5px 3px 5px grey;
-    		  margin : 20px;
-    		}
-    		
-    	.dis button{
-    	       float:right;
-    	       background-color: var(--teal);
-    	       margin: 4px 2px;
-    	       border: none;    	       
-    	}
-    	
-    	.dis a{
-    	   color: white;
-    	}
-  </style>
+    <link rel="stylesheet" type = "text/css" href="<?php echo base_url() ?>assets/css/styles.css">
+	<link rel="stylesheet" type = "text/css" href="<?php echo base_url() ?>assets/css/ask-style.css">
 </head>
 <body>
-	<nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background: var(--teal);">
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background: var(--teal);">
         <div class="container"><a class="navbar-brand" href="Home.html" style="color: var(--white);">HiFarm</a>
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="<?= base_url()."index.php/main_page/ask_2"; ?>" style="color: var(--white);">Ask</a></li>
@@ -43,25 +25,13 @@
         </div>
     </nav>
 	
-	<?php foreach($show as $dat){ ?>
-        
-	<div class="dis">
-		
-		<?php
-			echo $dat['username']."<hr>";
-			echo $dat['pertanyaan'];
-		?>
-		
-		<button href="#">reply</button>
-		<button href="#"><a href="<?php echo base_url()."index.php/main_page/edit"; ?>"> edit </a></button>
-		<button> <a href="<?php echo base_url()."index.php/main_page/hapus/".$dat['id']; ?>"> hapus </a> </button>
-		
+	<div class="box_ask">
+		<form action="<?php echo base_url()."index.php/main_page/update"; ?>" method="POST">
+		<div class= "ask" ><input class="box" type="text" name="tanya" /></div>
+		<div><button type="submit" style="color: rgb(255, 255, 255);background: var(--teal);">Edit</button></div>
 	</div>
-
-	<?php } ?>
 	
-	
-	<div class="footer-2" style="background: var(--teal);">
+    <div class="footer-2" style="background: var(--teal);">
         <div class="container">
             <div class="row">
                 <div class="col-8 col-sm-6 col-md-6">
@@ -73,6 +43,7 @@
             </div>
         </div>
     </div>
-
+	
+  
 </body>
 </html>
