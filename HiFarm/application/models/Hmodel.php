@@ -27,5 +27,10 @@ class Hmodel extends CI_Model {
         $datany = $this->db->update($tabel,$data,$where);
         return $datany;
     }
+    
+    public function select($tabel,$where){
+        $datany = $this->db->where($tabel,$where);
+        return $datany;
+    }
 
 }

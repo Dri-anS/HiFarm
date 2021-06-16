@@ -134,7 +134,7 @@ class main_page extends CI_Controller {
 //  update/edit data diskusi
 	public function update(){
 	    $inputData = array(
-	        'username' => $this->input->post('username'),
+// 	        'username' => $this->input->post('username'),
 	        'pertanyaan' => $this->input->post('tanya')
 	    );
 	    
@@ -143,8 +143,14 @@ class main_page extends CI_Controller {
 	    );
 	    
 	    
-	    $dataAsk = $this->Hmodel->perbarui('ask',$inputData,$inputWhere);
+	    $this->Hmodel->perbarui('ask',$inputData,$inputWhere);
 	    redirect(base_url()."index.php/main_page/discussion");
 	}
+	
+	public function reply(){
+	    $this->load->view('reply');
+	}
+	
+	
 	
 }
