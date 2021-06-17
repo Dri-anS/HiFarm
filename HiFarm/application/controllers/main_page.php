@@ -117,4 +117,40 @@ class main_page extends CI_Controller {
 	    $this->load->view('discussion',$data);
 	}
 	
+	//hapus data diskusi
+	public function hapus($wheres){
+	    
+	    $inputWhere = array(
+	        'id' => $wheres
+	    );
+	    $this->Hmodel->hapus('ask',$inputWhere);
+	    redirect(base_url()."index.php/main_page/discussion");
+	}
+	
+	public function edit(){
+	    $this->load->view('edit_form');
+	}
+	
+//  update/edit data diskusi
+	public function update(){
+	    $inputData = array(
+// 	        'username' => $this->input->post('username'),
+	        'pertanyaan' => $this->input->post('tanya')
+	    );
+	    
+	    $inputWhere = array(
+	        'id' => $this->input->post('id')
+	    );
+	    
+	    
+	    $this->Hmodel->perbarui('ask',$inputData,$inputWhere);
+	    redirect(base_url()."index.php/main_page/discussion");
+	}
+	
+	public function reply(){
+	    $this->load->view('reply');
+	}
+	
+	
+	
 }
