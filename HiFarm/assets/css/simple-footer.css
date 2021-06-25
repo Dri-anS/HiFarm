@@ -1,6 +1,9 @@
 .footer-2 {
+  display: block;
   background-color: #231f20;
   color: rgb(255,255,255);
+  position: relative;
+  height: 100%;
   
 }
 

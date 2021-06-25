@@ -4,7 +4,7 @@
 	
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>diskusi</title>
+    <title>Diskusi</title>
     <link rel="stylesheet" type = "text/css" href="<?php echo base_url() ?>assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type = "text/css" href="<?php echo base_url() ?>assets/css/login-full-page-bs4.css">
     <link rel="stylesheet" type = "text/css" href="<?php echo base_url() ?>assets/css/Navigation-Clean.css">
@@ -33,7 +33,7 @@
 </head>
 <body>
 	<nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background: var(--teal);">
-        <div class="container"><a class="navbar-brand" href="Home.html" style="color: var(--white);">HiFarm</a>
+        <div class="container"><a class="navbar-brand" href="<?php echo base_url();""?>"style="color: var(--white);">HiFarm</a>
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="<?= base_url()."index.php/main_page/ask_2"; ?>" style="color: var(--white);">Ask</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?= base_url()."index.php/main_page/discussion"; ?>" style="color: var(--white);">Discussion</a></li>
@@ -51,15 +51,13 @@
 			echo $dat['username']."<hr>";
 			echo $dat['pertanyaan'];
 		?>
-		
-		<button> <a href="<?php echo base_url()."index.php/main_page/reply"; ?>"> reply </a></button>
+	
 		<button> <a href="<?php echo base_url()."index.php/main_page/edit/".$dat['id']; ?>"> edit </a></button>
 		<button> <a href="<?php echo base_url()."index.php/main_page/hapus/".$dat['id']; ?>"> hapus </a> </button>
 		
 	</div>
 
 	<?php } ?>
-	
 	
 	<div class="footer-2" style="background: var(--teal);">
         <div class="container">
