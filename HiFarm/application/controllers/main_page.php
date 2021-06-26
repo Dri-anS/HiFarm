@@ -23,6 +23,11 @@ class main_page extends CI_Controller {
 	{
 		$this->load->view('ask_2');
 	}
+	public function artikel()
+	{
+		$this->load->view('artikel');
+	}
+	
 	
 	//login
 	public function login()
